@@ -1,0 +1,15 @@
+name: Test Scan
+on:
+  workflow_dispatch:  # Allows manual triggering
+  # no push triggers
+  
+  # no schedule triggers
+
+jobs:
+  test-scan:
+    name: Test Scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: echo test
+        
